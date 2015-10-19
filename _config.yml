@@ -1,0 +1,70 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 整站的基本信息
+title: Tblog
+subtitle: Stay hungry, Stay foolish.
+description: 
+author: dcfun
+email: uu78999@gmail.com
+language: zh-CN
+
+# URL 网址
+url: http://dcfun.github.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults: 
+
+# Directory  目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: 
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+external_link: true # 在新标签打开链接
+future: true #显示未来文章
+highlight: 
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace: 
+
+# Category&Tag 分类&标签
+default_category: uncategorized
+category_map: 
+tag_map: 
+
+# Date/Time format 时间/日期格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination 分页
+## Set per_page to 0 to disable pagination
+per_page: 6
+pagination_dir: page
+
+# Extensions 扩展
+theme: yilia
+Plugins:
+ - hexo-generator-feed
+ 
+#Feed Atom
+feed: 
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:dcfun/dcfun.github.io.git
+  branch: master
